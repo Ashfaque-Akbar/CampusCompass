@@ -11,7 +11,7 @@ WHATSAPP_TOKEN = "EAAXKxT2po3ABSwdUQjnIIVDf5aFHoZCCRJynNqcISim6xukOr91SByBZBAeF0
 PHONE_NUMBER_ID = "1458259450693098"
 # ============================================
 
-@app.route(route="CampusCompassAPI", methods=[func.HttpMethod.GET, func.HttpMethod.POST])
+@app.route(route="CampusCompassAPI",auth_level=func.AuthLevel.ANONYMOUS, methods=[func.HttpMethod.GET, func.HttpMethod.POST])
 def CampusCompassAPI(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('CampusCompass Triggered')
 
