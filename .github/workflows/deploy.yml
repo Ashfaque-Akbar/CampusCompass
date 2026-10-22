@@ -27,7 +27,6 @@ jobs:
           app-name: 'CampusCompass'
           package: '.'
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
-        with:
           app-name: 'CampusCompass'
           package: '.'
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
